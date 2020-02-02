@@ -16,9 +16,6 @@ import java.util.Date;
 import edu.itu.csc.quakenweather.R;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * Created by Andrii Stasenko  on 3/12/2018.
- */
 
 public class WeatherDetailsActivity extends AppCompatActivity {
     @Override
@@ -26,7 +23,7 @@ public class WeatherDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_weather_details);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#228B22")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#324857")));
 
         Intent intent = getIntent();
         setTitle(R.string.weather_details);

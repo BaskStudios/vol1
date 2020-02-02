@@ -5,7 +5,7 @@
 
     <PreferenceCategory
         android:key="quake_filters"
-        android:title="QUAKE FILTERS">
+        android:title="Deprem Filtreleri">
         <ListPreference
             android:defaultValue="@string/preference_magnitude_3.0"
             android:entries="@array/preference_magnitude_options"
@@ -22,9 +22,9 @@
 
     <PreferenceCategory
         android:key="data_customization"
-        android:title="DATA CUSTOMIZATION">
+        android:title="Mesafe Ölçü Birimleri ">
         <ListPreference
-            android:defaultValue="@string/preference_distance_miles"
+            android:defaultValue="@string/preference_distance_kilometers"
             android:entries="@array/preference_distance_options"
             android:entryValues="@array/preference_distance_values"
             android:key="@string/preference_distance_key"
@@ -33,9 +33,9 @@
 
     <PreferenceCategory
         android:key="temperature_format"
-        android:title="TEMPERATURE FORMAT">
+        android:title="Sıcaklık Birimleri">
         <ListPreference
-            android:defaultValue="@string/preference_temperature_fahrenheit"
+            android:defaultValue="@string/preference_temperature_celsius"
             android:entries="@array/preference_temperature_format_values"
             android:entryValues="@array/preference_temperature_format_values"
             android:key="@string/preference_temperature_key"
@@ -44,16 +44,16 @@
 
     <PreferenceCategory
         android:key="debugging_data"
-        android:title="DEBUGGING DATA">
+        android:title="HATA AYIKLAMA">
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="@string/preference_device_information_key"
-            android:summary="Uncheck if you do not want to share data"
+            android:summary="Veri paylaşmak istemiyorsanız işaretini kaldırın"
             android:title="@string/preference_device_information_label" />
         <CheckBoxPreference
             android:defaultValue="true"
             android:key="@string/preference_error_information_key"
-            android:summary="Uncheck if you do not want to share data"
+            android:summary="Veri paylaşmak istemiyorsanız işaretini kaldırın"
             android:title="@string/preference_error_information_label" />
     </PreferenceCategory>
 

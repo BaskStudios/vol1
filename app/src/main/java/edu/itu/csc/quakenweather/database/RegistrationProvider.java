@@ -9,11 +9,6 @@ import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
-/**
- * RegistrationProvider for registration details.
- *
- * @author "Jigar Gosalia"
- */
 public class RegistrationProvider extends ContentProvider {
 
     private static final String PROVIDER_NAME = "edu.itu.csc.quakenweather.registration";

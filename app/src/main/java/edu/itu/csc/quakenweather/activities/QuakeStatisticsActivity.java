@@ -26,11 +26,7 @@ import edu.itu.csc.quakenweather.models.Quake;
 import edu.itu.csc.quakenweather.settings.SettingsActivity;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * Quake Statistics Activity to display quake statistics for the day, week and month.
- *
- * @author "Jigar Gosalia"
- */
+
 public class QuakeStatisticsActivity extends AppCompatActivity {
 
     private TextView updateTime;
@@ -51,7 +47,7 @@ public class QuakeStatisticsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quake_statistics);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#228B22")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#324857")));
 
         updateTime = (TextView) findViewById(R.id.update_time);
         updateFilter = (TextView) findViewById(R.id.update_filter);

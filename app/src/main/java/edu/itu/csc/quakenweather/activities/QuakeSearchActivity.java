@@ -35,12 +35,7 @@ import edu.itu.csc.quakenweather.settings.SettingsActivity;
 import edu.itu.csc.quakenweather.search.RecommendTrie;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * Display city name recommendations where there was a quake given filters using Trie data structure.
- *
- * @author "Jigar Gosalia"
- *
- */
+
 public class QuakeSearchActivity extends AppCompatActivity {
 
     private static ArrayAdapter<Quake> quakeAdapter = null;
@@ -58,7 +53,7 @@ public class QuakeSearchActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quake_search);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#228B22")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#324857")));
 
         updateTime = (TextView) findViewById(R.id.update_time);
         updateFilter = (TextView) findViewById(R.id.update_filter);

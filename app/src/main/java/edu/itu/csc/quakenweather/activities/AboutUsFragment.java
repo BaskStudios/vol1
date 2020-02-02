@@ -13,11 +13,6 @@ import edu.itu.csc.quakenweather.R;
 import edu.itu.csc.quakenweather.database.RegistrationProvider;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * About Us fragment containing a simple view.
- *
- * @author "Jigar Gosalia"
- */
 public class AboutUsFragment extends Fragment {
 
     public AboutUsFragment() {}

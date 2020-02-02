@@ -57,9 +57,9 @@
     <string name="preference_duration_last_24_hr">last24hr</string>
     <string name="preference_duration_this_week">thisweek</string>
 
-    <string name="preference_distance_label">Distance Units</string>
-    <string name="preference_distance_label_miles">Miles</string>
-    <string name="preference_distance_label_kilometers">Kilometers</string>
+    <string name="preference_distance_label">Mesafe Birimleri</string>
+    <string name="preference_distance_label_miles">Mile</string>
+    <string name="preference_distance_label_kilometers">Kilometre</string>
     <string name="preference_distance_key">distance</string>
     <string name="preference_distance_miles">miles</string>
     <string name="preference_distance_kilometers">kilometers</string>
@@ -95,9 +95,9 @@
     <string name="statistics_this_month">Bu Ay</string>
     <string name="title_activity_about_us">AboutUsActivity</string>
     <string name="title_activity_weather">Hava Durumu</string>
-    <string name="preference_temperature_celsius">Celsius</string>
-    <string name="preference_temperature_fahrenheit">Fahrenheit</string>
-    <string name="preference_temperature_key">tSıcaklık</string>
+    <string name="preference_temperature_celsius">℃</string>
+    <string name="preference_temperature_fahrenheit">℉</string>
+    <string name="preference_temperature_key">Sıcaklık</string>
     <string name="temperature_units">Sıcaklık Birimleri</string>
     <string name="morning_temperature">Gündüz Sıcaklığı</string>
     <string name="day_temperature">Gün Sıcaklığı</string>

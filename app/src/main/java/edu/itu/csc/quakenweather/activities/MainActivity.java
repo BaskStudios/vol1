@@ -37,11 +37,7 @@ import edu.itu.csc.quakenweather.models.Quake;
 import edu.itu.csc.quakenweather.settings.SettingsActivity;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * Landing Page of the Quake N Weather Android Application (Main Activity)
- *
- * @author "Jigar Gosalia"
- */
+
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 

@@ -56,7 +56,7 @@ public class WeatherActivity extends AppCompatActivity implements ActivityCompat
         setContentView(R.layout.activity_weather);
 
         setTitle(R.string.title_activity_weather);
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#228B22")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#324857")));
 
         PreferenceManager.setDefaultValues(getApplicationContext(), R.xml.preference_general, false);
 
@@ -112,7 +112,7 @@ public class WeatherActivity extends AppCompatActivity implements ActivityCompat
                 startActivity(new Intent(WeatherActivity.this, SettingsActivity.class));
                 break;
             default:
-                Toast.makeText(this, "No Such Action Supported!", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "Böyle Bir Eylem Desteklenmiyor!", Toast.LENGTH_LONG).show();
         }
         return super.onOptionsItemSelected(item);
     }
@@ -123,9 +123,7 @@ public class WeatherActivity extends AppCompatActivity implements ActivityCompat
         new LoadWeeklyWeatherForecast(this).execute();
     }
 
-    /**
-     * AsyncTask to fetch latest quake data from USGS.
-     */
+
     public class LoadWeeklyWeatherForecast extends AsyncTask<Void, Void, ArrayList<Weather>> {
 
         private ProgressDialog dialog;
@@ -138,7 +136,7 @@ public class WeatherActivity extends AppCompatActivity implements ActivityCompat
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = ProgressDialog.show(context, "Latest Weather Forecast", "Collecting latest weather forecast data from Open Weather ... ", false);
+            dialog = ProgressDialog.show(context, "Son Hava Durumu Tahmini", "En Son Hava Durumu Verileri Toplanıyor.. ", false);
         }
 
         @Override
@@ -249,7 +247,7 @@ public class WeatherActivity extends AppCompatActivity implements ActivityCompat
                 ListView listView = (ListView) findViewById(R.id.weather_list);
                 listView.setAdapter(weatherAdapter);
             } else {
-                Toast.makeText(context, "Couldn't load weather data from Open Weather, check your internet connection and try again!", Toast.LENGTH_LONG).show();
+                Toast.makeText(context, "İnternet Bağlantınızı Kontrol Ediniz!", Toast.LENGTH_LONG).show();
             }
         }
     }
