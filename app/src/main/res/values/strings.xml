@@ -1,0 +1,121 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">DepremBilgisi</string>
+
+    <string name="title_activity_main">Depremler</string>
+    <string name="title_activity_map">Depremleri Görüntüle</string>
+    <string name="title_activity_statistics">Deprem İstatistikleri</string>
+    <string name="title_activity_settings">Seçenekler</string>
+    <string name="title_activity_details">Deprem Detayları</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_search">Ara</string>
+    <string name="title_activity_weather_details">Hava Durumu Detayları</string>
+
+    <string name="navigation_drawer_open">Aç</string>
+    <string name="navigation_drawer_close">Kapa</string>
+
+    <string name="action_refresh">Yenile</string>
+    <string name="action_map">Harita</string>
+    <string name="action_statistics">İstatistik</string>
+    <string name="action_search">Arama</string>
+    <string name="action_settings">Seçenekler</string>
+
+    <string name="email_address">baskstudios@hotmail.com</string>
+
+    <string name="preference_magnitude_label">Default Magnitude Filter</string>
+    <string name="preference_magnitude_label_1.0">1.0+</string>
+    <string name="preference_magnitude_label_2.0">2.0+</string>
+    <string name="preference_magnitude_label_3.0">3.0+</string>
+    <string name="preference_magnitude_label_4.0">4.0+</string>
+    <string name="preference_magnitude_label_4.5">4.5+</string>
+    <string name="preference_magnitude_label_5.0">5.0+</string>
+    <string name="preference_magnitude_label_5.5">5.5+</string>
+    <string name="preference_magnitude_label_6.0">6.0+</string>
+    <string name="preference_magnitude_label_6.5">6.5+</string>
+    <string name="preference_magnitude_label_7.0">7.0+</string>
+    <string name="preference_magnitude_label_7.5">7.5+</string>
+    <string name="preference_magnitude_key">magnitude</string>
+    <string name="preference_magnitude_1.0">1.0</string>
+    <string name="preference_magnitude_2.0">2.0</string>
+    <string name="preference_magnitude_3.0">3.0</string>
+    <string name="preference_magnitude_4.0">4.0</string>
+    <string name="preference_magnitude_4.5">4.5</string>
+    <string name="preference_magnitude_5.0">5.0</string>
+    <string name="preference_magnitude_5.5">5.5</string>
+    <string name="preference_magnitude_6.0">6.0</string>
+    <string name="preference_magnitude_6.5">6.5</string>
+    <string name="preference_magnitude_7.0">7.0</string>
+    <string name="preference_magnitude_7.5">7.5</string>
+
+    <string name="preference_duration_label">Varsayılan Tarih Filtresi</string>
+    <string name="preference_duration_label_last_hour">Son Saat</string>
+    <string name="preference_duration_label_today">Bugün</string>
+    <string name="preference_duration_label_last_24_hr">Son 24 Saat</string>
+    <string name="preference_duration_label_this_week">Bu Hafta</string>
+    <string name="preference_duration_key">duration</string>
+    <string name="preference_duration_last_hour">lasthour</string>
+    <string name="preference_duration_today">today</string>
+    <string name="preference_duration_last_24_hr">last24hr</string>
+    <string name="preference_duration_this_week">thisweek</string>
+
+    <string name="preference_distance_label">Distance Units</string>
+    <string name="preference_distance_label_miles">Miles</string>
+    <string name="preference_distance_label_kilometers">Kilometers</string>
+    <string name="preference_distance_key">distance</string>
+    <string name="preference_distance_miles">miles</string>
+    <string name="preference_distance_kilometers">kilometers</string>
+
+    <string name="preference_device_information_key">Cihaz</string>
+    <string name="preference_device_information_label">Cihaz Bilgisi</string>
+    <string name="preference_error_information_key">Hata</string>
+    <string name="preference_error_information_label">Hata Bilgisi</string>
+
+    <string name="link">&lt;a href="HREF">View on USGS Website&lt;/a></string>
+    <string name="name1">Andrii Stasenko (92409)</string>
+    <string name="name2">Jigar Rajnikant Gosalia (89753)</string>
+    <string name="name3">Pratik Ganapavarapu (91290)</string>
+    <string name="course">SWE690 Capstone Project</string>
+    <string name="trimester">Spring 2018</string>
+    <string name="professor">Prof. Tushar Chandra</string>
+    <string name="software_version">1.0</string>
+    <string name="description">An Android application that displays Quake information using free data APIs from https://earthquake.usgs.gov/ and Weather information using free data APIs https://openweathermap.org/api</string>
+
+    <string name="about_name">Name(alpha order):</string>
+    <string name="about_student_id">Student Id:</string>
+    <string name="about_course">Course:</string>
+    <string name="about_professor">Professor:</string>
+    <string name="about_trimester">Trimester:</string>
+    <string name="about_version">Version:</string>
+    <string name="about_description">Description:</string>
+    <string name="about_install">Installed:</string>
+    <string name="about_last_viewed">Last Viewed:</string>
+
+    <string name="details_title">Başlık:</string>
+    <string name="details_location">Lokasyon:</string>
+    <string name="details_coordinates">Koordinatlar:</string>
+    <string name="details_time">Zaman:</string>
+    <string name="details_depth">Derinlik:</string>
+    <string name="details_event_id">EventId:</string>
+    <string name="details_significance">Önem:</string>
+    <string name="details_review_status">Durum:</string>
+    <string name="details_more_details">Daha Fazla Detay:</string>
+
+    <string name="weather_button_text">7 Günlük Hava Durumuna Bak</string>
+    <string name="statistics_today">Bugünkü Depremler</string>
+    <string name="statistics_this_week">Bu Hafta</string>
+    <string name="statistics_this_month">Bu Ay</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_weather">Hava Durumu</string>
+    <string name="preference_temperature_celsius">Celsius</string>
+    <string name="preference_temperature_fahrenheit">Fahrenheit</string>
+    <string name="preference_temperature_key">tSıcaklık</string>
+    <string name="temperature_units">Sıcaklık Birimleri</string>
+    <string name="morning_temperature">Gündüz Sıcaklığı</string>
+    <string name="day_temperature">Gün Sıcaklığı</string>
+    <string name="evening_temperature">Akşam Sıcaklığı:</string>
+    <string name="night_temperature">Gece Sıcaklığı:</string>
+    <string name="atmospheric_pressure">Atmosferik basınç:</string>
+    <string name="humidity">Nem:</string>
+    <string name="wind_speed">Rüzgar Hızı:</string>
+    <string name="weather_details">Hava Durumu Detayları</string>
+
+</resources>
