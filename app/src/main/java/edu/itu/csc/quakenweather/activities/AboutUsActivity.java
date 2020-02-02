@@ -19,7 +19,7 @@ public class AboutUsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
 
-        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#228B22")));
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.parseColor("#324857")));
     }
 
 }

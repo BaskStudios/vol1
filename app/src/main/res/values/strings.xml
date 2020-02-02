@@ -1,12 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">DepremBilgisi</string>
+    <string name="app_name">Deprem Bilgisi</string>
 
     <string name="title_activity_main">Depremler</string>
     <string name="title_activity_map">Depremleri Görüntüle</string>
     <string name="title_activity_statistics">Deprem İstatistikleri</string>
     <string name="title_activity_settings">Seçenekler</string>
     <string name="title_activity_details">Deprem Detayları</string>
-    <string name="title_activity_about">About</string>
+    <string name="title_activity_about">Hakkımızda</string>
     <string name="title_activity_search">Ara</string>
     <string name="title_activity_weather_details">Hava Durumu Detayları</string>
 
@@ -21,7 +21,7 @@
 
     <string name="email_address">baskstudios@hotmail.com</string>
 
-    <string name="preference_magnitude_label">Default Magnitude Filter</string>
+    <string name="preference_magnitude_label">Deprem Büyüklüğünü Seçiniz</string>
     <string name="preference_magnitude_label_1.0">1.0+</string>
     <string name="preference_magnitude_label_2.0">2.0+</string>
     <string name="preference_magnitude_label_3.0">3.0+</string>
@@ -69,32 +69,22 @@
     <string name="preference_error_information_key">Hata</string>
     <string name="preference_error_information_label">Hata Bilgisi</string>
 
-    <string name="link">&lt;a href="HREF">View on USGS Website&lt;/a></string>
-    <string name="name1">Andrii Stasenko (92409)</string>
-    <string name="name2">Jigar Rajnikant Gosalia (89753)</string>
-    <string name="name3">Pratik Ganapavarapu (91290)</string>
-    <string name="course">SWE690 Capstone Project</string>
-    <string name="trimester">Spring 2018</string>
-    <string name="professor">Prof. Tushar Chandra</string>
+    <string name="link">&lt;a href="HREF">USGS Web Sitesini Ziyaret Et&lt;/a></string>
+    <string name="name1">BASK Studios</string>
     <string name="software_version">1.0</string>
-    <string name="description">An Android application that displays Quake information using free data APIs from https://earthquake.usgs.gov/ and Weather information using free data APIs https://openweathermap.org/api</string>
+    <string name="description">Deprem Bilgileri https://earthquake.usgs.gov/ ve Hava Durumu bilgileri https://openweathermap.org/api sitelerinden güncellenmektedir.</string>
 
-    <string name="about_name">Name(alpha order):</string>
-    <string name="about_student_id">Student Id:</string>
-    <string name="about_course">Course:</string>
-    <string name="about_professor">Professor:</string>
-    <string name="about_trimester">Trimester:</string>
-    <string name="about_version">Version:</string>
-    <string name="about_description">Description:</string>
-    <string name="about_install">Installed:</string>
-    <string name="about_last_viewed">Last Viewed:</string>
+    <string name="about_name">Yapımcı:</string>
+    <string name="about_version">Versiyon:</string>
+    <string name="about_description">Açıklama:</string>
+    <string name="about_install">İndirilme Tarihi:</string>
+    <string name="about_last_viewed">Son Görülme:</string>
 
     <string name="details_title">Başlık:</string>
     <string name="details_location">Lokasyon:</string>
     <string name="details_coordinates">Koordinatlar:</string>
     <string name="details_time">Zaman:</string>
     <string name="details_depth">Derinlik:</string>
-    <string name="details_event_id">EventId:</string>
     <string name="details_significance">Önem:</string>
     <string name="details_review_status">Durum:</string>
     <string name="details_more_details">Daha Fazla Detay:</string>

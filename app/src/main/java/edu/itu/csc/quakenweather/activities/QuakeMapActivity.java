@@ -217,8 +217,7 @@ public class QuakeMapActivity extends AppCompatActivity {
                     TextView depth = (TextView) detailedView.findViewById(R.id.depth_data);
                     depth.setText(Utility.getFormattedDepth(Utility.getConvertedDepth(quakeInfo.getDepth(), distance), distance));
 
-                    TextView eventId = (TextView) detailedView.findViewById(R.id.event_id_data);
-                    eventId.setText(quakeInfo.getEventId());
+
 
                     TextView significance = (TextView) detailedView.findViewById(R.id.significance_data);
                     significance.setText(quakeInfo.getSignificance());

@@ -47,8 +47,7 @@ public class QuakeDetailsActivity extends AppCompatActivity {
         TextView depth = (TextView) findViewById(R.id.depth_data);
         depth.setText(Utility.getFormattedDepth(Utility.getConvertedDepth(intent.getDoubleExtra("Derinlik", 0), distance), distance));
 
-        TextView eventId = (TextView) findViewById(R.id.event_id_data);
-        eventId.setText(intent.getStringExtra("eventid"));
+
 
         TextView significance = (TextView) findViewById(R.id.significance_data);
         significance.setText(intent.getStringExtra("Önem"));
