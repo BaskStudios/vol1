@@ -86,7 +86,6 @@
     <string name="details_time">Zaman:</string>
     <string name="details_depth">Derinlik:</string>
     <string name="details_significance">Önem:</string>
-    <string name="details_review_status">Durum:</string>
     <string name="details_more_details">Daha Fazla Detay:</string>
 
     <string name="weather_button_text">7 Günlük Hava Durumuna Bak</string>
