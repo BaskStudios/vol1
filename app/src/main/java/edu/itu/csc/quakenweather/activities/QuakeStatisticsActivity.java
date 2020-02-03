@@ -220,6 +220,5 @@ public class QuakeStatisticsActivity extends AppCompatActivity {
         String magnitude = prefs.getString(this.getString(R.string.preference_magnitude_key), null);
         String duration = prefs.getString(this.getString(R.string.preference_duration_key), null);
         updateTime.setText(("Updated: " + timeFormatter.format(date)).toString());
-        updateFilter.setText(("Filters: " + magnitude + "; " + Utility.durationMap.get(duration)).toString());
     }
 }

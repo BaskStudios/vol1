@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Deprem Bilgisi</string>
+    <string name="app_name">Son Depremler</string>
 
     <string name="title_activity_main">Depremler</string>
     <string name="title_activity_map">Depremleri Görüntüle</string>
@@ -22,47 +22,47 @@
     <string name="email_address">baskstudios@hotmail.com</string>
 
     <string name="preference_magnitude_label">Deprem Büyüklüğünü Seçiniz</string>
-    <string name="preference_magnitude_label_1.0">1.0+</string>
-    <string name="preference_magnitude_label_2.0">2.0+</string>
-    <string name="preference_magnitude_label_3.0">3.0+</string>
-    <string name="preference_magnitude_label_4.0">4.0+</string>
-    <string name="preference_magnitude_label_4.5">4.5+</string>
-    <string name="preference_magnitude_label_5.0">5.0+</string>
-    <string name="preference_magnitude_label_5.5">5.5+</string>
-    <string name="preference_magnitude_label_6.0">6.0+</string>
-    <string name="preference_magnitude_label_6.5">6.5+</string>
-    <string name="preference_magnitude_label_7.0">7.0+</string>
-    <string name="preference_magnitude_label_7.5">7.5+</string>
-    <string name="preference_magnitude_key">magnitude</string>
-    <string name="preference_magnitude_1.0">1.0</string>
-    <string name="preference_magnitude_2.0">2.0</string>
-    <string name="preference_magnitude_3.0">3.0</string>
-    <string name="preference_magnitude_4.0">4.0</string>
-    <string name="preference_magnitude_4.5">4.5</string>
-    <string name="preference_magnitude_5.0">5.0</string>
-    <string name="preference_magnitude_5.5">5.5</string>
-    <string name="preference_magnitude_6.0">6.0</string>
-    <string name="preference_magnitude_6.5">6.5</string>
-    <string name="preference_magnitude_7.0">7.0</string>
-    <string name="preference_magnitude_7.5">7.5</string>
+    <string name="preference_magnitude_label_1.0" translatable="false">1.0+</string>
+    <string name="preference_magnitude_label_2.0" translatable="false">2.0+</string>
+    <string name="preference_magnitude_label_3.0" translatable="false">3.0+</string>
+    <string name="preference_magnitude_label_4.0" translatable="false">4.0+</string>
+    <string name="preference_magnitude_label_4.5" translatable="false">4.5+</string>
+    <string name="preference_magnitude_label_5.0" translatable="false">5.0+</string>
+    <string name="preference_magnitude_label_5.5" translatable="false">5.5+</string>
+    <string name="preference_magnitude_label_6.0" translatable="false">6.0+</string>
+    <string name="preference_magnitude_label_6.5" translatable="false">6.5+</string>
+    <string name="preference_magnitude_label_7.0" translatable="false">7.0+</string>
+    <string name="preference_magnitude_label_7.5" translatable="false">7.5+</string>
+    <string name="preference_magnitude_key" translatable="false">magnitude</string>
+    <string name="preference_magnitude_1.0" translatable="false">1.0</string>
+    <string name="preference_magnitude_2.0" translatable="false">2.0</string>
+    <string name="preference_magnitude_3.0" translatable="false">3.0</string>
+    <string name="preference_magnitude_4.0" translatable="false">4.0</string>
+    <string name="preference_magnitude_4.5" translatable="false">4.5</string>
+    <string name="preference_magnitude_5.0" translatable="false">5.0</string>
+    <string name="preference_magnitude_5.5" translatable="false">5.5</string>
+    <string name="preference_magnitude_6.0" translatable="false">6.0</string>
+    <string name="preference_magnitude_6.5" translatable="false">6.5</string>
+    <string name="preference_magnitude_7.0" translatable="false">7.0</string>
+    <string name="preference_magnitude_7.5" translatable="false">7.5</string>
 
     <string name="preference_duration_label">Varsayılan Tarih Filtresi</string>
     <string name="preference_duration_label_last_hour">Son Saat</string>
     <string name="preference_duration_label_today">Bugün</string>
     <string name="preference_duration_label_last_24_hr">Son 24 Saat</string>
     <string name="preference_duration_label_this_week">Bu Hafta</string>
-    <string name="preference_duration_key">duration</string>
-    <string name="preference_duration_last_hour">lasthour</string>
-    <string name="preference_duration_today">today</string>
-    <string name="preference_duration_last_24_hr">last24hr</string>
-    <string name="preference_duration_this_week">thisweek</string>
+    <string name="preference_duration_key" translatable="false">duration</string>
+    <string name="preference_duration_last_hour" translatable="false">lasthour</string>
+    <string name="preference_duration_today" translatable="false">today</string>
+    <string name="preference_duration_last_24_hr" translatable="false">last24hr</string>
+    <string name="preference_duration_this_week" translatable="false">thisweek</string>
 
     <string name="preference_distance_label">Mesafe Birimleri</string>
     <string name="preference_distance_label_miles">Mile</string>
     <string name="preference_distance_label_kilometers">Kilometre</string>
-    <string name="preference_distance_key">distance</string>
-    <string name="preference_distance_miles">miles</string>
-    <string name="preference_distance_kilometers">kilometers</string>
+    <string name="preference_distance_key" translatable="false">distance</string>
+    <string name="preference_distance_miles" translatable="false">miles</string>
+    <string name="preference_distance_kilometers" translatable="false">kilometers</string>
 
     <string name="preference_device_information_key">Cihaz</string>
     <string name="preference_device_information_label">Cihaz Bilgisi</string>
@@ -70,8 +70,8 @@
     <string name="preference_error_information_label">Hata Bilgisi</string>
 
     <string name="link">&lt;a href="HREF">USGS Web Sitesini Ziyaret Et&lt;/a></string>
-    <string name="name1">BASK Studios</string>
-    <string name="software_version">1.0</string>
+    <string name="name1" translatable="false">BASK Studios</string>
+    <string name="software_version" translatable="false">1.0</string>
     <string name="description">Deprem Bilgileri https://earthquake.usgs.gov/ ve Hava Durumu bilgileri https://openweathermap.org/api sitelerinden güncellenmektedir.</string>
 
     <string name="about_name">Yapımcı:</string>
@@ -93,10 +93,10 @@
     <string name="statistics_today">Bugünkü Depremler</string>
     <string name="statistics_this_week">Bu Hafta</string>
     <string name="statistics_this_month">Bu Ay</string>
-    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_about_us" translatable="false">AboutUsActivity</string>
     <string name="title_activity_weather">Hava Durumu</string>
-    <string name="preference_temperature_celsius">℃</string>
-    <string name="preference_temperature_fahrenheit">℉</string>
+    <string name="preference_temperature_celsius" translatable="false">℃</string>
+    <string name="preference_temperature_fahrenheit" translatable="false">℉</string>
     <string name="preference_temperature_key">Sıcaklık</string>
     <string name="temperature_units">Sıcaklık Birimleri</string>
     <string name="morning_temperature">Gündüz Sıcaklığı</string>
