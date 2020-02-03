@@ -43,11 +43,6 @@ import edu.itu.csc.quakenweather.database.RegistrationProvider;
 import edu.itu.csc.quakenweather.R;
 import edu.itu.csc.quakenweather.models.Quake;
 
-/**
- * Utility class to hold generic utilities.
- *
- * @author "Jigar Gosalia"
- */
 public class Utility {
 
     public static final String DEFAULT_MAGNITUDE = "3.0";
@@ -88,13 +83,6 @@ public class Utility {
         return formatter.format(date);
     }
 
-    /**
-     * Get formatted Depth i.e. with mi or km suffix depending on the metric system in settings.
-     *
-     * @param depth
-     * @param distance
-     * @return
-     */
     public static String getFormattedDepth(String depth, String distance) {
         return (isMiles(distance) ? (depth + " Mi") : (depth + " Km"));
     }
@@ -147,13 +135,13 @@ public class Utility {
         Date current = new Date();
         SimpleDateFormat displayFormatter = new SimpleDateFormat("MM/dd hh:mm a");
         SimpleDateFormat dateFormatter = new SimpleDateFormat("MM/dd/yyyy");
-        SimpleDateFormat timeFormatter = new SimpleDateFormat("K:mm a");
+        SimpleDateFormat timeFormatter = new SimpleDateFormat("hh:mm a");
         String quakeTimeS = dateFormatter.format(quakeTime);
         String currentS = dateFormatter.format(current);
         if (quakeTimeS != null
                 && currentS != null) {
             if (quakeTimeS.equals(currentS)) {
-                builder.append("Today " + timeFormatter.format(quakeTime));
+                builder.append("Bugün " + timeFormatter.format(quakeTime));
             } else {
                 builder.append(displayFormatter.format(quakeTime));
             }
@@ -164,13 +152,7 @@ public class Utility {
     }
 
 
-    /**
-     * Get date time for feedback email.
-     *
-     * @param unixTime
-     * @return
-     * @throws Exception
-     */
+
     public static String getDateTimeForFeedback(long unixTime) throws Exception {
         StringBuilder builder = new StringBuilder();
         Date quakeTime = new Date((long) unixTime);
@@ -184,12 +166,7 @@ public class Utility {
         return builder.toString();
     }
 
-    /**
-     * Update the last viewed time in database for About screen.
-     *
-     * @param caller
-     * @param context
-     */
+
     public static void updateLastViewed(String caller, Context context) {
         Map<String, String> map = Utility.getRegistrationEntry(context);
         Log.d(MainActivity.APP_TAG, caller + " Time: " + (new Date()));
@@ -200,16 +177,7 @@ public class Utility {
         }
     }
 
-    /**
-     * Set the text color on the listview depending on the magnitude of the quake.
-     *
-     * 0.0 to 3.5  - HUE_GREEN  - #00FF00
-     * 3.5 to 5.5  - HUE_ORANGE - #FF6347
-     * 5.5 & above - HUE_RED    - #FF0000
-     *
-     * @param input
-     * @return
-     */
+
     public static int getTextColorFromMagnitude(String input) {
         double magnitude = Double.parseDouble(input);
         if (magnitude >=0 && magnitude <= 3.5) {
@@ -221,16 +189,7 @@ public class Utility {
         }
     }
 
-    /**
-     * Set the text color on the google marker depending on the magnitude of the earthquake.
-     *
-     * 0.0 to 3.5  - HUE_GREEN  - #00FF00
-     * 3.5 to 5.5  - HUE_ORANGE - #FF6347
-     * 5.5 & above - HUE_RED    - #FF0000
-     *
-     * @param input
-     * @return
-     */
+
     public static float getMarkerColorFromMagnitude(String input) {
         double magnitude = Double.parseDouble(input);
         if (magnitude >=0 && magnitude <= 3.5) {
@@ -256,12 +215,7 @@ public class Utility {
         Log.d(MainActivity.APP_TAG, "Utility: Added registration uri: " + uri.toString());
     }
 
-    /**
-     * Get entries from registration tables.
-     *
-     * @param context
-     * @return
-     */
+
     public static Map<String, String> getRegistrationEntry(Context context) {
         Map<String, String> map = new HashMap<String, String>();
         Cursor cursor = context.getContentResolver().query(ContentUris.withAppendedId(RegistrationProvider.CONTENT_URI, Long.valueOf(1)), null, null, null, null);
@@ -274,11 +228,6 @@ public class Utility {
         return map;
     }
 
-    /**
-     * update entry in registration table.
-     *
-     * @param context
-     */
     public static void updateRegistrationEntry(Context context) {
         long timestamp = new Date().getTime();
         ContentValues contentValues = new ContentValues();
@@ -287,11 +236,7 @@ public class Utility {
         Log.d(MainActivity.APP_TAG, "Utility: Updated registration: " + result + " time: " + Utility.getFormattedDate(Utility.formatter, String.valueOf(timestamp)));
     }
 
-    /**
-     * Add an entry in error table.
-     *
-     * @param context
-     */
+
     public static void addErrorEntry(Context context, Exception exception) {
         ContentValues contentValues = new ContentValues();
         String exceptionName = (exception != null ? exception.toString() : "No Exception Details");
@@ -302,12 +247,6 @@ public class Utility {
         Log.d(MainActivity.APP_TAG, "Utility: Added error uri: " + uri.toString() + " ;exception: " + contentValues.get(ErrorProvider.ERROR_DETAILS));
     }
 
-    /**
-     * Get entries from error tables.
-     *
-     * @param context
-     * @return
-     */
     public static Map<String, String> getErrorEntry(Context context) {
         Map<String, String> map = new TreeMap<>(Collections.reverseOrder());
         Cursor cursor = context.getContentResolver().query(ErrorProvider.CONTENT_URI, null, null, null, null);
@@ -320,16 +259,7 @@ public class Utility {
         return map;
     }
 
-    /**
-     * Call USGS API to get quake data and parse the data.
-     *
-     * @param caller
-     * @param urlPath
-     * @param magnitude
-     * @param duration
-     * @param distance
-     * @return
-     */
+
     public static List<Quake> getQuakeData(String caller, String urlPath, String magnitude, String duration, String distance, Context context) {
         List<Quake> quakeList = new ArrayList<Quake>();
         HttpURLConnection urlConnection = null;

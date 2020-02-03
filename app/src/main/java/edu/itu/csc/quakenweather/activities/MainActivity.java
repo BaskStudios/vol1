@@ -101,10 +101,7 @@ public class MainActivity extends AppCompatActivity
                 }
             }
         });
-        // TODO : Delete this in real implementation
-        // Below is just for demo purpose to show how bad user experiences,
-        // which are captured in DB, will be shared to developer for debugging
-        // Utility.addErrorEntry(this, new Exception("DEMO PURPOSE ERROR"));
+
     }
 
     @Override
@@ -215,8 +212,7 @@ public class MainActivity extends AppCompatActivity
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         String magnitude = prefs.getString(this.getString(R.string.preference_magnitude_key), null);
         String duration = prefs.getString(this.getString(R.string.preference_duration_key), null);
-        updateTime.setText(("Updated: " + timeFormatter.format(date)).toString());
-        updateFilter.setText(("Filters: " + magnitude + "; " + Utility.durationMap.get(duration)).toString());
+        updateTime.setText(("Son Güncelleme: " + timeFormatter.format(date)).toString());
     }
 
     /**

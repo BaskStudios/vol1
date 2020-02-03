@@ -19,11 +19,6 @@ import edu.itu.csc.quakenweather.R;
 import edu.itu.csc.quakenweather.models.Quake;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * QuakeAdapter for displaying quake details on main page.
- *
- * @author "Jigar Gosalia"
- */
 public class QuakeAdapter extends ArrayAdapter<Quake> {
 
     private Context context;
@@ -63,7 +58,7 @@ public class QuakeAdapter extends ArrayAdapter<Quake> {
         holder.magnitudeTextView.setTextColor(Utility.getTextColorFromMagnitude(quake.getMagnitude()));
         holder.placeTextView.setText(quake.getFormattedPlace());
         String depth = Utility.getFormattedDepth(Utility.getConvertedDepth(quake.getDepth(), distance), distance);
-        holder.depthTextView.setText("Depth: " + depth);
+        holder.depthTextView.setText("Derinlik: " + depth);
         holder.timeTextView.setText(quake.getFormattedTime());
         return row;
     }
