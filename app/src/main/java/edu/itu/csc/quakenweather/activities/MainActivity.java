@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity
                     Log.d(MainActivity.APP_TAG, "Quake Selected : " + quake);
                     Intent intent = new Intent(MainActivity.this, QuakeDetailsActivity.class);
                     intent.putExtra("Başlık", quake.getTitle());
-                    intent.putExtra("Lokasyon", quake.getFormattedPlace());
+                    intent.putExtra("Lokasyon", quake.getFormattedPlace()); // lokasyon burdan geliyor
                     intent.putExtra("Koordinat", quake.getFormattedCoordinates());
                     intent.putExtra("Zaman", quake.getFormattedTime());
                     intent.putExtra("Derinlik", quake.getDepth());
@@ -267,4 +267,6 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+
 }
+
