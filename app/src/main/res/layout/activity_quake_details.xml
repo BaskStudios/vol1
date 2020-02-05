@@ -19,6 +19,7 @@
             android:layout_height="match_parent"
             android:id="@+id/title_text"
             android:text="@string/details_title"
+            android:textSize="20dp"
             android:layout_weight="1"/>
         <TextView
             android:layout_width="0dp"
@@ -40,6 +41,8 @@
             android:layout_height="match_parent"
             android:id="@+id/location_text"
             android:text="@string/details_location"
+            android:textSize="20dp"
+
             android:layout_weight="1"/>
         <TextView
             android:layout_width="0dp"
@@ -61,6 +64,8 @@
             android:layout_height="match_parent"
             android:id="@+id/coordinates_text"
             android:text="@string/details_coordinates"
+            android:textSize="20dp"
+
             android:layout_weight="1"/>
 
         <TextView
@@ -84,6 +89,8 @@
             android:layout_height="match_parent"
             android:id="@+id/time_text"
             android:text="@string/details_time"
+            android:textSize="20dp"
+
             android:layout_weight="1"/>
 
         <TextView
@@ -106,6 +113,8 @@
             android:layout_height="match_parent"
             android:id="@+id/depth_text"
             android:text="@string/details_depth"
+            android:textSize="20dp"
+
             android:layout_weight="1"/>
 
         <TextView
@@ -130,6 +139,8 @@
             android:layout_height="match_parent"
             android:id="@+id/significance_text"
             android:text="@string/details_significance"
+            android:textSize="20dp"
+
             android:layout_weight="1"/>
 
         <TextView
@@ -139,27 +150,7 @@
             android:layout_weight="2"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:paddingLeft="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/review_status_layout"
-        android:orientation="horizontal"
-        android:weightSum="3">
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/review_status_text"
-            android:text="@string/details_review_status"
-            android:layout_weight="1"/>
 
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/review_status_data"
-            android:layout_weight="2"/>
-    </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="10dp"
@@ -169,12 +160,15 @@
         android:id="@+id/url_link_layout"
         android:orientation="horizontal"
         android:weightSum="3">
+
         <TextView
+            android:id="@+id/url_link_text"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:id="@+id/url_link_text"
+            android:layout_weight="1"
             android:text="@string/details_more_details"
-            android:layout_weight="1"/>
+
+            android:textSize="15dp" />
 
         <TextView
             android:layout_width="0dp"
@@ -182,6 +176,8 @@
             android:id="@+id/url_link_data"
             android:layout_weight="2"/>
     </LinearLayout>
+
+
 
 
     <pl.droidsonroids.gif.GifImageView

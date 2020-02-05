@@ -52,8 +52,6 @@ public class QuakeDetailsActivity extends AppCompatActivity {
         TextView significance = (TextView) findViewById(R.id.significance_data);
         significance.setText(intent.getStringExtra("Önem"));
 
-        TextView status = (TextView) findViewById(R.id.review_status_data);
-        status.setText(intent.getStringExtra("Durum"));
 
         String url = intent.getStringExtra("url");
         TextView urlLink = (TextView) findViewById(R.id.url_link_data);

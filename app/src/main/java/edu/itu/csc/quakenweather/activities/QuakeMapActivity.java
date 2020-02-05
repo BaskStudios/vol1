@@ -222,8 +222,6 @@ public class QuakeMapActivity extends AppCompatActivity {
                     TextView significance = (TextView) detailedView.findViewById(R.id.significance_data);
                     significance.setText(quakeInfo.getSignificance());
 
-                    TextView status = (TextView) detailedView.findViewById(R.id.review_status_data);
-                    status.setText(quakeInfo.getStatus());
 
                     TextView urlLinkData = (TextView) detailedView.findViewById(R.id.url_link_data);
                     urlLinkData.setVisibility(View.GONE);

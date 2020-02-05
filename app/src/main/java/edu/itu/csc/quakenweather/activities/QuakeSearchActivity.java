@@ -234,6 +234,5 @@ public class QuakeSearchActivity extends AppCompatActivity {
         String magnitude = prefs.getString(this.getString(R.string.preference_magnitude_key), null);
         String duration = prefs.getString(this.getString(R.string.preference_duration_key), null);
         updateTime.setText(("Güncelle: " + timeFormatter.format(date)).toString());
-        updateFilter.setText(("Filtrele: " + magnitude + "; " + Utility.durationMap.get(duration)).toString());
     }
 }
