@@ -58,6 +58,8 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="edu.itu.csc.quakenweather.activities.MainActivity" />
         </activity>
+        <activity android:name=".activities.whatshoulddo"
+            ></activity>
 
         <provider
             android:name=".database.RegistrationProvider"
