@@ -152,6 +152,7 @@
 
 
 
+
     <LinearLayout
         android:layout_marginTop="10dp"
         android:paddingLeft="5dp"
@@ -177,13 +178,29 @@
             android:layout_weight="2"/>
     </LinearLayout>
 
-
-
-
-    <pl.droidsonroids.gif.GifImageView
+    <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="@drawable/giphy"
-        />
+        android:layout_height="wrap_content"
+        android:id="@+id/buton"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/deprembuton"
+            android:textColor="#FAFAFA"
+            android:textSize="20sp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Deprem Anında Ne Yapmalısınız?"
+            android:background="@drawable/button_background">
+
+        </Button>
+    </LinearLayout>
+
+
 
 </LinearLayout>

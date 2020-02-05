@@ -30,10 +30,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/name1_data"
-                android:textSize="22dp"
-
+                android:textSize="15dp"
+                android:layout_marginTop="5dp"
                 android:text="@string/name1"
-                android:textStyle="bold"
                 android:textColor="#000000"
                 android:layout_weight="2"/>
         </LinearLayout>
@@ -63,10 +62,9 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/version_data"
-                android:textStyle="bold"
-                android:textColor="#000000"
                 android:textSize="15dp"
-
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
                 android:text="@string/software_version"
                 android:layout_weight="2"/>
         </LinearLayout>
@@ -94,9 +92,8 @@
                 android:layout_height="match_parent"
                 android:id="@+id/description_data"
                 android:textSize="15dp"
-
+                android:layout_marginTop="5dp"
                 android:inputType="textMultiLine"
-                android:textStyle="bold"
                 android:textColor="#000000"
                 android:text="@string/description"
                 android:layout_weight="2"/>
@@ -124,9 +121,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/install_data"
-                android:textStyle="bold"
                 android:textSize="15dp"
-
+                android:layout_marginTop="5dp"
                 android:textColor="#000000"
                 android:layout_weight="2"/>
         </LinearLayout>
@@ -154,20 +150,18 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:id="@+id/last_data"
-                android:textStyle="bold"
-                android:textColor="#000000"
                 android:textSize="15dp"
-
+                android:layout_marginTop="5dp"
+                android:textColor="#000000"
                 android:layout_weight="2"/>
         </LinearLayout>
+
         <LinearLayout
-            android:layout_marginTop="20dp"
-            android:paddingLeft="25dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/last_layout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal"
-            android:textSize="22dp"
 
             android:weightSum="3">
 
@@ -177,9 +171,8 @@
                 android:layout_height="match_parent"
                 android:layout_weight="3"
                 android:text="Deprem Çantanızı Oluşturmayı İhmal Etmeyiniz"
-
                 android:textColor="#000000"
-                android:textSize="22dp"
+                android:textSize="18dp"
                 android:textStyle="bold"
 
                 />
