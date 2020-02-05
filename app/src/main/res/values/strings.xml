@@ -1,5 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">Son Depremler</string>
+    <string name="app_name">Son Depremler </string>
 
     <string name="title_activity_main">Depremler</string>
     <string name="title_activity_map">Depremleri Görüntüle</string>
