@@ -63,24 +63,7 @@ public class QuakeDetailsActivity extends AppCompatActivity {
         final double longitude = intent.getDoubleExtra("Boylam", 0.0);
         final double latitude = intent.getDoubleExtra("Enlem", 0.0);
 
-        Button weatherButton = (Button) findViewById(R.id.weatherButton);
-        weatherButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                try {
-                    Intent intent = new Intent(getApplicationContext(), WeatherActivity.class);
-                    intent.putExtra("Boylam",longitude);
-                    intent.putExtra("Enlem",latitude);
-                    startActivity(intent);
-                } catch (Exception exception) {
-                    Log.e(MainActivity.APP_TAG, "QuakeDetailsMapActivity: onCreate: " + exception.toString());
-                    Utility.addErrorEntry(getApplicationContext(), exception);
-                    exception.printStackTrace();
-                    Toast.makeText(getApplicationContext(), "Tekrar Deneyin!", Toast.LENGTH_SHORT).show();
-                }
 
-            }
-        });
     }
 
 }
