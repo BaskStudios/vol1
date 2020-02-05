@@ -107,4 +107,29 @@
     <string name="wind_speed">Rüzgar Hızı:</string>
     <string name="weather_details">Hava Durumu Detayları</string>
 
+
+    <string name="once1" translatable="false">
+Dolap üzerine konulan eşya ve büro malzemeleri kayarak düşmelerini önlemek için plastik tutucu malzeme veya yapıştırıcılarla sabitlenmelidir.
+Soba ve diğer ısıtıcılar sağlam malzemelerle duvara veya yere sabitlenmelidir.
+Dolaplar ve devrilebilecek benzeri eşyalar birbirine ve duvara sabitlenmelidir.
+      </string>
+    <string name="once2" translatable="false">
+Tezgah üzerindeki kayabilecek beyaz eşyaların altına metal profil koyarak bunların kayması önlenmelidir.
+Zehirli, patlayıcı, yanıcı maddeler düşmeyecek bir konumda sabitlenmeli ve kırılmayacak bir şekilde depolanmalıdır. Bu maddelerin üzerlerine fosforlu, belirleyici etiketler konulmalıdır.</string>
+
+<string name="sıra" translatable="false">Sabitlenmemiş dolap, raf, pencere vb. eşyalardan uzak durulmalıdır.
+Varsa sağlam sandalyelerle desteklenmiş masa altına veya dolgun ve hacimli koltuk, kanepe, içi dolu sandık gibi koruma sağlayabilecek eşya yanına çömelerek hayat üçgeni oluşturulmalıdır.
+Baş iki el arasına alınarak veya bir koruyucu (yastık, kitap vb) malzeme ile korunmalıdır. Sarsıntı geçene kadar bu pozisyonda beklenmelidir.
+Güvenli bir yer bulup, diz üstü ÇÖK, Başını ve enseni koruyacak şekilde KAPAN, Düşmemek için sabit bir yere TUTUN
+Okulda sınıfta ya da büroda ise sağlam sıra, masa altlarında veya yanında; koridorda ise duvarın yanına hayat üçgeni oluşturacak şekilde ÇÖK-KAPAN-TUTUN hareketi ile baş ve boyun korunmalıdır.</string>
+<string name="son" translatable="false">
+    Önce kendi emniyetinizden emin olun.
+Sonra çevrenizde yardım edebileceğiniz kimse olup olmadığını kontrol edin.
+Depremlerden sonra çıkan yangınlar oldukça sık görülen ikincil afetlerdir. Bu nedenle eğer gaz kokusu alırsanız, gaz vanasını kapatın. Camları ve kapıları açın. Hemen binayı terk edin.
+Dökülen tehlikeli maddeleri temizleyin.
+Hasarlı binalardan ve enerji nakil hatlarından uzak durun.
+Önce yakın çevrenizde acil yardıma gerek duyanlara yardım edin.
+Sonra mahalle toplanma noktanıza gidin.
+</string>
+
 </resources>
