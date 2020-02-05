@@ -219,6 +219,6 @@ public class QuakeStatisticsActivity extends AppCompatActivity {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         String magnitude = prefs.getString(this.getString(R.string.preference_magnitude_key), null);
         String duration = prefs.getString(this.getString(R.string.preference_duration_key), null);
-        updateTime.setText(("Updated: " + timeFormatter.format(date)).toString());
+        updateTime.setText(("Son Güncelleme: " + timeFormatter.format(date)).toString());
     }
 }
