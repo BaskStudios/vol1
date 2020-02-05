@@ -23,6 +23,8 @@ public class QuakeDetailsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quake_details);
 
@@ -61,7 +63,13 @@ public class QuakeDetailsActivity extends AppCompatActivity {
         final double longitude = intent.getDoubleExtra("Boylam", 0.0);
         final double latitude = intent.getDoubleExtra("Enlem", 0.0);
 
-
+        Button deprembtn = (Button) findViewById(R.id.deprembuton);
+        deprembtn.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                // Gideceği sayfayı yaz.
+            }
+        });
     }
+
 
 }
