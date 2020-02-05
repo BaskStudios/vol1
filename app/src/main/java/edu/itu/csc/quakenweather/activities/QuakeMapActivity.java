@@ -226,23 +226,7 @@ public class QuakeMapActivity extends AppCompatActivity {
                     final double longitude = quakeInfo.getLongitude();
                     final double latitude = quakeInfo.getLatitude();
 
-                    Button weatherButton = (Button) detailedView.findViewById(R.id.weatherButton);
-                    weatherButton.setOnClickListener(new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            try {
-                                Intent intent = new Intent(context, WeatherActivity.class);
-                                intent.putExtra("boylam",longitude);
-                                intent.putExtra("enlem",latitude);
-                                context.startActivity(intent);
-                            } catch (Exception exception) {
-                                Log.e(MainActivity.APP_TAG, "QuakeMapActivity: handleOnClickInfoWindowEvent: " + exception.toString());
-                                Utility.addErrorEntry(context, exception);
-                                exception.printStackTrace();
-                                Toast.makeText(context, "Tekrar Deneyiniz", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    });
+
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(context);
                     final View titleView = inflater.inflate(R.layout.activity_title, null);
@@ -255,12 +239,7 @@ public class QuakeMapActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * draw map as per user filters.
-     *
-     * @param context
-     * @param mMapView
-     */
+
     private void drawMap(Context context, MapView mMapView) {
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(context);
         String magnitude = preferences.getString(context.getString(R.string.preference_magnitude_key), null);
