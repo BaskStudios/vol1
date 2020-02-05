@@ -68,7 +68,6 @@ public class QuakeDetailsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 // Gideceği sayfayı yaz.
                 Intent intent = new Intent(QuakeDetailsActivity.this, whatshoulddo.class);
-
                 startActivity(intent);
             }
         });
