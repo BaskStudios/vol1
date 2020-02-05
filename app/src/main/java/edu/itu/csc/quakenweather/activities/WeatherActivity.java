@@ -40,9 +40,6 @@ import edu.itu.csc.quakenweather.models.Weather;
 import edu.itu.csc.quakenweather.settings.SettingsActivity;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * Created by Andrii Stasenko on 2/9/2018.
- */
 
 public class WeatherActivity extends AppCompatActivity implements ActivityCompat.OnRequestPermissionsResultCallback {
 
@@ -157,18 +154,9 @@ public class WeatherActivity extends AppCompatActivity implements ActivityCompat
             String appID = bundle.getString("org.openweathermap.APP_ID");
 
             StringBuilder futureURL = new StringBuilder();
-            futureURL.append("http://api.openweathermap.org/data/2.5/forecast/daily?lat=");
-            futureURL.append(latitude);
-            futureURL.append("&lon=");
-            futureURL.append(longitude);
-            futureURL.append("&cnt=7&appid=");
-            futureURL.append(appID);
-            futureURL.append("&units=");
-            if (temperatureFormat.equals("Celsius")) {
-                futureURL.append("metric");
-            } else {
-                futureURL.append("imperial");
-            }
+            futureURL.append("https://samples.openweathermap.org/data/2.5/forecast?lat=35&lon=139&appid=b6907d289e10d714a6e88b30761fae22");
+
+
             String urlPath = futureURL.toString();
             String weatherResponse = null;
             ArrayList<Weather> weekWeather = new ArrayList<Weather>();

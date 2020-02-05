@@ -5,11 +5,7 @@ import android.util.Log;
 import edu.itu.csc.quakenweather.activities.MainActivity;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * Quake Information model to hold quake related information.
- *
- * @author "Jigar Gosalia"
- */
+
 public class Quake {
 
     private String magnitude;

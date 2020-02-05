@@ -2,9 +2,6 @@ package edu.itu.csc.quakenweather.models;
 
 import android.graphics.Bitmap;
 
-/**
- * Created by Andrii Stasenko on 3/4/2018.
- */
 
 public class Weather {
 

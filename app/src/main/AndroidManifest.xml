@@ -76,8 +76,8 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyBvIh5kERIeyLV50M9qLFY52pYkA0hmLjc" />
         <meta-data
-            android:name="org.openweathermap.APP_ID"
-            android:value="35228501ebfb98d939ed602129b0c582"
+            android:name="org.openweathermap.APP_KEY"
+            android:value="f0d965d3e7d443926c98484577477da1"
  />
     </application>
 </manifest>

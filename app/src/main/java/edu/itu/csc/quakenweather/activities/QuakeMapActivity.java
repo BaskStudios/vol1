@@ -38,12 +38,7 @@ import edu.itu.csc.quakenweather.models.Quake;
 import edu.itu.csc.quakenweather.settings.SettingsActivity;
 import edu.itu.csc.quakenweather.utilities.Utility;
 
-/**
- * activity to locate the quake locations with color markers(as per quake magnitude) on Google Map.
- *
- * @author "Jigar Gosalia"
- *
- */
+
 public class QuakeMapActivity extends AppCompatActivity {
 
     private MapView mMapView;

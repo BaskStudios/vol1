@@ -21,10 +21,6 @@ import java.util.List;
 import edu.itu.csc.quakenweather.R;
 import edu.itu.csc.quakenweather.models.Weather;
 
-/**
- * Created by Andrii Stasenko on 3/7/2018.
- */
-
 public class WeatherAdapter extends ArrayAdapter<Weather> {
     private Context context;
 
