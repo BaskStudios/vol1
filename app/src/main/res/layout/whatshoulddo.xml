@@ -7,26 +7,20 @@
     android:layout_height="wrap_content"
     tools:context=".activities.whatshoulddo"
     >
-
-
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:verticalScrollbarPosition="right"
-
-    >
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:weightSum="2"
+
+        android:verticalScrollbarPosition="right"
         >
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:text="DEPREM ÖNCESİ ALINACAK ÖNLEMLER"
             android:textAlignment="center"
@@ -37,14 +31,14 @@
         </TextView>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
 
             android:orientation="horizontal"
             android:weightSum="2">
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/once1">
 
@@ -53,7 +47,7 @@
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/once2">
 
@@ -64,26 +58,26 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:text="@string/once1"></TextView>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
 
             android:orientation="horizontal"
             android:weightSum="2">
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/once3">
 
@@ -92,7 +86,7 @@
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/once4">
 
@@ -103,19 +97,19 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="140dp"
+                android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:text="@string/once2"></TextView>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:text="DEPREM ANINDA YAPILMASI GEREKENLER"
             android:textAlignment="center"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
@@ -125,7 +119,7 @@
         </TextView>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
 
             android:orientation="horizontal"
             android:weightSum="2">
@@ -133,7 +127,7 @@
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/sira1">
 
@@ -142,7 +136,7 @@
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:src="@drawable/sira2">
 
@@ -153,19 +147,19 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="300dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:text="@string/sıra"></TextView>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="wrap_content"
             android:text="DEPREM SONRASINDA YAPILMASI GEREKENLER"
             android:textAlignment="center"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
@@ -175,14 +169,14 @@
         </TextView>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="2">
 
 
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:src="@drawable/sonra1">
 
@@ -190,24 +184,19 @@
             </android.support.v7.widget.AppCompatImageView>
 
 
-
-
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="220dp"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="220dp"
+                android:layout_height="wrap_content"
                 android:textSize="16dp"
                 android:text="@string/son"></TextView>
         </LinearLayout>
-
     </LinearLayout>
-</android.support.constraint.ConstraintLayout>
-
 </ScrollView>
