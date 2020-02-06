@@ -116,13 +116,13 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:weightSum="3">
-                <android.support.v7.widget.AppCompatImageView
+                <androidx.appcompat.widget.AppCompatImageView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:src="@drawable/statics"
                     >
 
-                </android.support.v7.widget.AppCompatImageView>
+                </androidx.appcompat.widget.AppCompatImageView>
 
             </LinearLayout>
 

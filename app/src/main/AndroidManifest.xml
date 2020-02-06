@@ -15,6 +15,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
         <activity
             android:name=".activities.MainActivity"
             android:screenOrientation="portrait"
@@ -71,5 +73,8 @@
             android:name="org.openweathermap.APP_KEY"
             android:value="f0d965d3e7d443926c98484577477da1"
  />
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
     </application>
 </manifest>
