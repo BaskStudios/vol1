@@ -7,6 +7,10 @@ import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.preference.PreferenceManager;
+
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.material.navigation.NavigationView;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -44,7 +48,6 @@ public class MainActivity extends AppCompatActivity
     private static ArrayAdapter<Quake> quakeAdapter = null;
 
     private TextView updateTime;
-
     private TextView updateFilter;
 
     @Override
@@ -53,6 +56,8 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
 
         setTitle(getString(R.string.title_activity_main));
+
+
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);

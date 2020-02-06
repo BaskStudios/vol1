@@ -19,6 +19,9 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
@@ -39,6 +42,7 @@ import edu.itu.csc.quakenweather.utilities.Utility;
 
 
 public class QuakeMapActivity extends AppCompatActivity {
+    private AdView mAdView;
 
     private MapView mMapView;
 
@@ -58,6 +62,12 @@ public class QuakeMapActivity extends AppCompatActivity {
             Log.d(MainActivity.APP_TAG, "MapsInitializer Exception: " + exception.toString());
             exception.printStackTrace();
         }
+        MobileAds.initialize(this, "ca-app-pub-3940256099942544~3347511713");
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
     }
 
     @Override
