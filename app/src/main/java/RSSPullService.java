@@ -25,7 +25,7 @@ public class RSSPullService extends IntentService {
         NotificationManager manager = (NotificationManager) getSystemService(NOTIFICATION_SERVICE);
         Notification.Builder builder = new Notification.Builder(RSSPullService.this);
         builder.setContentText("Bildirim");
-        builder.setSmallIcon(R.drawable.bell);
+      //  builder.setSmallIcon(R.drawable.bell);
         builder.setAutoCancel(true);
         builder.setTicker("Bildirim Geldi");
 
