@@ -70,35 +70,37 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_marginTop="10dp"
-            android:paddingLeft="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
             android:id="@+id/description_layout"
+            android:layout_width="match_parent"
+            android:layout_height="112dp"
+            android:layout_marginTop="10dp"
             android:orientation="horizontal"
+            android:paddingLeft="5dp"
             android:weightSum="3">
+
             <TextView
+                android:id="@+id/description_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/description_text"
-                android:textStyle="bold"
+                android:layout_weight="2"
                 android:text="@string/about_description"
                 android:textSize="20dp"
 
-                android:layout_weight="2"/>
+                android:textStyle="bold" />
 
             <TextView
+                android:id="@+id/description_data"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/description_data"
-                android:textSize="16dp"
+                android:layout_weight="1"
                 android:inputType="textMultiLine"
-                android:textColor="#000000"
                 android:text="@string/description"
-                android:layout_weight="1"/>
+                android:textColor="#000000"
+                android:textSize="16dp" />
         </LinearLayout>
 
         <LinearLayout
+            android:layout_marginTop="10dp"
             android:paddingLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
