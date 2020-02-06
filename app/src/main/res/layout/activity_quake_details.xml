@@ -15,17 +15,17 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/title_text"
             android:text="@string/details_title"
             android:textSize="20dp"
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/title_data"
             android:layout_weight="2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_data"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
@@ -37,18 +37,18 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/location_text"
             android:text="@string/details_location"
             android:textSize="20dp"
 
-            android:layout_weight="1"/>
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:id="@+id/location_data"
             android:layout_weight="2"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/location_data"
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
@@ -60,19 +60,19 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/coordinates_text"
             android:text="@string/details_coordinates"
             android:textSize="20dp"
 
-            android:layout_weight="1"/>
+            android:layout_weight="2"/>
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/coordinates_data"
-            android:layout_weight="2"/>
+            android:layout_weight="1"/>
     </LinearLayout>
 
 
@@ -85,19 +85,19 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/time_text"
             android:text="@string/details_time"
             android:textSize="20dp"
 
-            android:layout_weight="1"/>
+            android:layout_weight="2"/>
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/time_data"
-            android:layout_weight="2"/>
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
@@ -109,19 +109,19 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/depth_text"
             android:text="@string/details_depth"
             android:textSize="20dp"
 
-            android:layout_weight="1"/>
+            android:layout_weight="2"/>
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/depth_data"
-            android:layout_weight="2"/>
+            android:layout_weight="1"/>
     </LinearLayout>
 
 
@@ -135,19 +135,19 @@
         android:orientation="horizontal"
         android:weightSum="3">
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/significance_text"
             android:text="@string/details_significance"
             android:textSize="20dp"
 
-            android:layout_weight="1"/>
+            android:layout_weight="2"/>
 
         <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/significance_data"
-            android:layout_weight="2"/>
+            android:layout_weight="1"/>
     </LinearLayout>
 
 
@@ -164,18 +164,18 @@
 
         <TextView
             android:id="@+id/url_link_text"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
             android:text="@string/details_more_details"
 
             android:textSize="15dp" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/url_link_data"
-            android:layout_weight="2"/>
+            android:layout_weight="1"/>
     </LinearLayout>
 
     <LinearLayout
