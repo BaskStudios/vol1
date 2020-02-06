@@ -3,15 +3,16 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
 
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
     tools:context=".activities.whatshoulddo"
     >
 
 
 <android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:verticalScrollbarPosition="right"
 
     >
@@ -19,11 +20,14 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:weightSum="2"
         >
         <TextView
             android:layout_width="match_parent"
             android:layout_height="30dp"
+            android:layout_marginTop="20dp"
             android:text="DEPREM ÖNCESİ ALINACAK ÖNLEMLER"
             android:textAlignment="center"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
@@ -60,13 +64,14 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="140dp"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
+                android:textSize="16dp"
                 android:text="@string/once1"></TextView>
         </LinearLayout>
         <LinearLayout
@@ -98,18 +103,19 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="140dp"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="140dp"
+                android:textSize="16dp"
                 android:text="@string/once2"></TextView>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="50dp"
             android:text="DEPREM ANINDA YAPILMASI GEREKENLER"
             android:textAlignment="center"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
@@ -147,22 +153,26 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="300dp"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="300dp"
+                android:textSize="16dp"
                 android:text="@string/sıra"></TextView>
         </LinearLayout>
         <TextView
             android:layout_width="match_parent"
+<<<<<<< HEAD
             android:layout_height="30dp"
 
+=======
+            android:layout_height="50dp"
+>>>>>>> 9bc70423f5bd764f686d561853dde9b516137ad8
             android:text="DEPREM SONRASINDA YAPILMASI GEREKENLER"
             android:textAlignment="center"
-            android:textSize="18dp"
             style="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
 
             >
@@ -171,7 +181,6 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="100dp"
-
             android:orientation="horizontal"
             android:weightSum="2">
 
@@ -179,7 +188,7 @@
             <android.support.v7.widget.AppCompatImageView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:layout_weight="1"
+                android:layout_weight="2"
                 android:src="@drawable/sonra1">
 
 
@@ -192,13 +201,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="100dp"
+            android:layout_height="220dp"
             android:orientation="horizontal"
             >
 
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="100dp"
+                android:layout_height="220dp"
+                android:textSize="16dp"
                 android:text="@string/son"></TextView>
         </LinearLayout>
 
