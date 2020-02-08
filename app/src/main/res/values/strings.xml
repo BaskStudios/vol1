@@ -72,7 +72,7 @@
     <string name="link">&lt;a href="HREF">USGS Web Sitesini Ziyaret Et&lt;/a></string>
     <string name="name1" translatable="false">BASK Studios</string>
     <string name="software_version" translatable="false">1.0</string>
-    <string name="description">Deprem Bilgileri https://earthquake.usgs.gov/ ve Hava Durumu bilgileri https://openweathermap.org/api sitelerinden güncellenmektedir.</string>
+    <string name="description">Deprem Bilgileri earthquake.usgs.gov sitesinden güncellenmektedir.</string>
 
     <string name="about_name">Yapımcı:</string>
     <string name="about_version">Versiyon:</string>

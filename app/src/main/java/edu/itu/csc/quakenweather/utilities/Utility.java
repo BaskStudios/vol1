@@ -47,9 +47,9 @@ public class Utility {
 
     public static final String DEFAULT_MAGNITUDE = "3.0";
 
-    public static final String DEFAULT_DURATION = "last24hr";
+    public static final String DEFAULT_DURATION = "thisweek";
 
-    public static final String DEFAULT_DISTANCE = "miles";
+    public static final String DEFAULT_DISTANCE = "kilometers";
 
     public static final SimpleDateFormat formatter = new SimpleDateFormat("EEE MMM dd yyyy KK:mm a");
 
