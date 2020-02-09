@@ -21,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -134,7 +135,7 @@ public class QuakeMapActivity extends AppCompatActivity {
     /**
      * AsyncTask to fetch quake data from USGS.
      */
-    public static class FetchQuakeMapDataTask extends AsyncTask<String, Void, List<Quake>> {
+    public class FetchQuakeMapDataTask extends AsyncTask<String, Void, List<Quake>> {
         private Context context;
         private MapView mMapView;
         private GoogleMap googleMap;
@@ -244,7 +245,7 @@ public class QuakeMapActivity extends AppCompatActivity {
                     time.setText(quakeInfo.getFormattedTime());
 
                     SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-                    String distance = prefs.getString("Mesafe", null);
+                    String distance = prefs.getString("Mesafe", "0");
                     TextView depth = (TextView) detailedView.findViewById(R.id.depth_data);
                     depth.setText(Utility.getFormattedDepth(Utility.getConvertedDepth(quakeInfo.getDepth(), distance), distance));
 
@@ -266,10 +267,18 @@ public class QuakeMapActivity extends AppCompatActivity {
 
                     AlertDialog.Builder builder = new AlertDialog.Builder(context);
                     final View titleView = inflater.inflate(R.layout.activity_title, null);
-                    builder.setCustomTitle(titleView).setPositiveButton("OK", null);
+                    builder.setCustomTitle(titleView).setPositiveButton("Tamam", null);
                     builder.setView(detailedView);
                     AlertDialog dialogBox = builder.create();
                     dialogBox.show();
+                    Button detailedbuton = detailedView.findViewById(R.id.deprembuton);
+                    detailedbuton.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(QuakeMapActivity.this, whatshoulddo.class);
+                            startActivity(intent);
+                        }
+                    });
                 }
             }
         }
