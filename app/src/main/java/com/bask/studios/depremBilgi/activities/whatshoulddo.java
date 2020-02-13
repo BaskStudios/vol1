@@ -8,7 +8,7 @@ import com.google.android.gms.ads.MobileAds;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import edu.itu.csc.quakenweather.R;
+import com.bask.studios.depremBilgi.R;
 
 public class whatshoulddo extends AppCompatActivity {
     private AdView mAdView;

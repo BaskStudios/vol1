@@ -1,9 +1,9 @@
-package edu.itu.csc.quakenweather.models;
+package com.bask.studios.depremBilgi.models;
 
 import android.util.Log;
 
-import edu.itu.csc.quakenweather.activities.MainActivity;
-import edu.itu.csc.quakenweather.utilities.Utility;
+import com.bask.studios.depremBilgi.activities.MainActivity;
+import com.bask.studios.depremBilgi.utilities.Utility;
 
 
 public class Quake {

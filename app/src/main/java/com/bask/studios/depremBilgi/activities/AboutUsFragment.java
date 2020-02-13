@@ -9,9 +9,9 @@ import android.widget.TextView;
 
 import java.util.Map;
 
-import edu.itu.csc.quakenweather.R;
-import edu.itu.csc.quakenweather.database.RegistrationProvider;
-import edu.itu.csc.quakenweather.utilities.Utility;
+import com.bask.studios.depremBilgi.R;
+import com.bask.studios.depremBilgi.database.RegistrationProvider;
+import com.bask.studios.depremBilgi.utilities.Utility;
 
 public class AboutUsFragment extends Fragment {
 

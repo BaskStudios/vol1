@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.itu.csc.quakenweather">
+    package="com.bask.studios.depremBilgi">
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -55,7 +55,7 @@
             android:screenOrientation="portrait">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="edu.itu.csc.quakenweather.activities.MainActivity" />
+                android:value="com.bask.studios.depremBilgi.activities.MainActivity" />
         </activity>
         <activity android:name=".activities.whatshoulddo"
             ></activity>

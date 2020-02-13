@@ -1,4 +1,4 @@
-package edu.itu.csc.quakenweather.adapters;
+package com.bask.studios.depremBilgi.adapters;
 
 import android.app.Activity;
 import android.content.Context;
@@ -15,9 +15,9 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import edu.itu.csc.quakenweather.R;
-import edu.itu.csc.quakenweather.models.Quake;
-import edu.itu.csc.quakenweather.utilities.Utility;
+import com.bask.studios.depremBilgi.R;
+import com.bask.studios.depremBilgi.models.Quake;
+import com.bask.studios.depremBilgi.utilities.Utility;
 
 public class QuakeAdapter extends ArrayAdapter<Quake> {
 

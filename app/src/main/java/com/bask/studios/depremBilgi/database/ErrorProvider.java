@@ -1,4 +1,4 @@
-package edu.itu.csc.quakenweather.database;
+package com.bask.studios.depremBilgi.database;
 
 import android.content.ContentProvider;
 import android.content.ContentUris;

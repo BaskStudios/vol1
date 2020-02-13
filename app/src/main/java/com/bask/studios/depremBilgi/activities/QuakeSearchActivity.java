@@ -28,12 +28,12 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import edu.itu.csc.quakenweather.R;
-import edu.itu.csc.quakenweather.adapters.QuakeAdapter;
-import edu.itu.csc.quakenweather.models.Quake;
-import edu.itu.csc.quakenweather.settings.SettingsActivity;
-import edu.itu.csc.quakenweather.search.RecommendTrie;
-import edu.itu.csc.quakenweather.utilities.Utility;
+import com.bask.studios.depremBilgi.R;
+import com.bask.studios.depremBilgi.adapters.QuakeAdapter;
+import com.bask.studios.depremBilgi.models.Quake;
+import com.bask.studios.depremBilgi.settings.SettingsActivity;
+import com.bask.studios.depremBilgi.search.RecommendTrie;
+import com.bask.studios.depremBilgi.utilities.Utility;
 
 
 public class QuakeSearchActivity extends AppCompatActivity {

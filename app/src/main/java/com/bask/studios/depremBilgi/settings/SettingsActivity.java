@@ -1,4 +1,4 @@
-package edu.itu.csc.quakenweather.settings;
+package com.bask.studios.depremBilgi.settings;
 
 import android.os.Bundle;
 import android.preference.ListPreference;
@@ -6,7 +6,7 @@ import android.preference.Preference;
 import android.preference.PreferenceActivity;
 import android.preference.PreferenceManager;
 
-import edu.itu.csc.quakenweather.R;
+import com.bask.studios.depremBilgi.R;
 
 /**
  * SettingsActivity to hold settings information.

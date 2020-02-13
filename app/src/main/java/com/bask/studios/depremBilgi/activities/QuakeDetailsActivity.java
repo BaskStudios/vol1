@@ -17,8 +17,8 @@ import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.google.android.gms.ads.MobileAds;
 
-import edu.itu.csc.quakenweather.R;
-import edu.itu.csc.quakenweather.utilities.Utility;
+import com.bask.studios.depremBilgi.R;
+import com.bask.studios.depremBilgi.utilities.Utility;
 
 
 public class QuakeDetailsActivity extends AppCompatActivity {

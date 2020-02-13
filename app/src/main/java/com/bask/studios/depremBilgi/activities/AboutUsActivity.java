@@ -5,7 +5,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
 
-import edu.itu.csc.quakenweather.R;
+import com.bask.studios.depremBilgi.R;
 
 public class AboutUsActivity extends AppCompatActivity {
 

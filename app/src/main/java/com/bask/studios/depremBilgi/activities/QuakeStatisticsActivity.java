@@ -25,10 +25,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import edu.itu.csc.quakenweather.R;
-import edu.itu.csc.quakenweather.models.Quake;
-import edu.itu.csc.quakenweather.settings.SettingsActivity;
-import edu.itu.csc.quakenweather.utilities.Utility;
+import com.bask.studios.depremBilgi.R;
+import com.bask.studios.depremBilgi.models.Quake;
+import com.bask.studios.depremBilgi.settings.SettingsActivity;
+import com.bask.studios.depremBilgi.utilities.Utility;
 
 
 public class QuakeStatisticsActivity extends AppCompatActivity {

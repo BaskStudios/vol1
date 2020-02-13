@@ -1,4 +1,4 @@
-package edu.itu.csc.quakenweather.search;
+package com.bask.studios.depremBilgi.search;
 
 import java.util.LinkedList;
 import java.util.List;

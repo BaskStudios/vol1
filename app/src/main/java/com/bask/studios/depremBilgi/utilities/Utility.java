@@ -1,4 +1,4 @@
-package edu.itu.csc.quakenweather.utilities;
+package com.bask.studios.depremBilgi.utilities;
 
 import android.content.ContentUris;
 import android.content.ContentValues;
@@ -36,12 +36,12 @@ import java.util.Map;
 import java.util.TreeMap;
 import java.util.ResourceBundle;
 
-import edu.itu.csc.quakenweather.activities.MainActivity;
-import edu.itu.csc.quakenweather.database.ErrorProvider;
-import edu.itu.csc.quakenweather.database.RegistrationProvider;
+import com.bask.studios.depremBilgi.activities.MainActivity;
+import com.bask.studios.depremBilgi.database.ErrorProvider;
+import com.bask.studios.depremBilgi.database.RegistrationProvider;
 
-import edu.itu.csc.quakenweather.R;
-import edu.itu.csc.quakenweather.models.Quake;
+import com.bask.studios.depremBilgi.R;
+import com.bask.studios.depremBilgi.models.Quake;
 
 public class Utility {
 
