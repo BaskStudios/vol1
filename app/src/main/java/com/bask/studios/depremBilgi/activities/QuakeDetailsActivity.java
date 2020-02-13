@@ -1,4 +1,4 @@
-package edu.itu.csc.quakenweather.activities;
+package com.bask.studios.depremBilgi.activities;
 
 import android.content.Intent;
 import android.content.SharedPreferences;

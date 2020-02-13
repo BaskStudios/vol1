@@ -1,4 +1,4 @@
-package edu.itu.csc.quakenweather.activities;
+package com.bask.studios.depremBilgi.activities;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;

@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="edu.itu.csc.quakenweather.activities.QuakeSearchActivity">
+    tools:context="com.bask.studios.depremBilgi.activities.QuakeSearchActivity">
 
     <EditText
         android:layout_width="match_parent"
