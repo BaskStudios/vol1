@@ -16,6 +16,9 @@ import android.preference.PreferenceManager;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
@@ -54,6 +57,7 @@ public class QuakeMapActivity extends AppCompatActivity {
             Manifest.permission.READ_CONTACTS };
     private MapView mMapView;
     private static final int INITIAL_REQUEST=1337;
+    private static final int MY_LOCATION_REQUEST_CODE = 177;
     private static final String[] LOCATION_PERMS={
             Manifest.permission.ACCESS_FINE_LOCATION
     };
@@ -70,8 +74,8 @@ public class QuakeMapActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_quake_map);
-        if (!canAccessLocation()) {
+
+      /*  if (!canAccessLocation()) {
             requestPermissions(INITIAL_PERMS, INITIAL_REQUEST);
         }
 
@@ -80,7 +84,25 @@ public class QuakeMapActivity extends AppCompatActivity {
         if(!hasPermission(Manifest.permission.ACCESS_FINE_LOCATION))
         {
             startActivity(new Intent(QuakeMapActivity.this, MainActivity.class));
-        }
+        }*/
+
+        // Here, thisActivity is the current activity
+     /*   if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+
+
+            if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.ACCESS_FINE_LOCATION)) {
+                Toast.makeText(getApplicationContext(), "Harita İzinlerini Veriniz", Toast.LENGTH_LONG).show();
+            } else {
+
+
+                ActivityCompat.requestPermissions(this, new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION}, INITIAL_REQUEST);
+
+
+            }
+        } else {
+
+        }*/
+        setContentView(R.layout.activity_quake_map);
         mMapView = (MapView) findViewById(R.id.mapView);
         mMapView.onCreate(savedInstanceState);
 
@@ -103,6 +125,11 @@ public class QuakeMapActivity extends AppCompatActivity {
         super.onResume();
         mMapView.onResume();
         drawMap(this, mMapView);
+    }
+    @Override
+    public void onRequestPermissionsResult( int requestCode, String[] permissions,int[] grantResults)
+    {
+
     }
 
     @Override
@@ -179,6 +206,16 @@ public class QuakeMapActivity extends AppCompatActivity {
                     @Override
                     public void onMapReady(GoogleMap mMap) {
                         googleMap = mMap;
+                        if (ActivityCompat.checkSelfPermission(QuakeMapActivity.this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(QuakeMapActivity.this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) { /// İZİN VERİLMEZSE BURAYA GELCEK
+                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                                requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION,
+                                        Manifest.permission.ACCESS_FINE_LOCATION}, MY_LOCATION_REQUEST_CODE);
+                            }
+
+
+                            return;
+
+                        }
 
                         googleMap.clear();
 
